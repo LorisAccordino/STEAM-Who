@@ -1,2 +1,5 @@
 # STEAM-Who
-An Akinator-like quiz about some popular STEAM people.
+Un quiz stile Akinator circa alcuni importanti personaggi STEAM.
+
+# Idea e analisi
+Work in progress...
