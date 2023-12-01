@@ -9,51 +9,51 @@ Lo script JavaScript implementa un algoritmo di filtraggio progressivo che utili
 
 ```javascript
 // Inizializzazione dei personaggi famosi
-const personaggi = [/* Array di 20 personaggi famosi */];
+const characters = [/* Array di 20 personaggi famosi */];
 
 function akinator() {
-    let personaggioCorrente = personaggi; // Inizialmente tutti i personaggi sono opzioni valide
+    let currentCharacter = characters; // Inizialmente tutti i personaggi sono opzioni valide
 
-    while (personaggioCorrente.length > 1) {
-        const domanda = generaDomanda(); // Genera la domanda da porre all'utente
+    while (currentCharacter.length > 1) {
+        const question = generateQuestion(); // Genera la domanda da porre all'utente
 
-        const risposta = ottieniRisposta(domanda); // Ottieni la risposta dell'utente (sì/no)
+        const answer = getAnswer(question); // Ottieni la risposta dell'utente (sì/no)
 
-        personaggioCorrente = filtraPersonaggi(personaggioCorrente, domanda, risposta);
+        currentCharacter = filterCharacters(currentCharacter, question, answer);
     }
 
-    const personaggioIndovinato = personaggioCorrente[0];
+    const guessedCharacter = currentCharacter[0];
 
-    const conferma = chiediConferma(personaggioIndovinato); // Chiedi all'utente se il personaggio indovinato è corretto
+    const confirmation = askConfirmation(guessedCharacter); // Chiedi all'utente se il personaggio indovinato è corretto
 
-    if (conferma) {
-        congratulaUtente();
+    if (confirmation) {
+        congratulateUser();
     } else {
-        segnalaErrore();
+        reportError();
     }
 }
 
-function generaDomanda() {
+function generateQuestion() {
     // Logica per generare una domanda in base ai personaggi rimanenti
 }
 
-function ottieniRisposta(domanda) {
+function getAnswer(question) {
     // Logica per ottenere la risposta dell'utente (sì/no) alla domanda
 }
 
-function filtraPersonaggi(personaggi, domanda, risposta) {
+function filterCharacters(characters, question, answer) {
     // Logica per filtrare i personaggi in base alla risposta dell'utente
 }
 
-function chiediConferma(personaggio) {
+function askConfirmation(character) {
     // Chiedi all'utente se il personaggio indovinato è corretto
 }
 
-function congratulaUtente() {
+function congratulateUser() {
     // Messaggio di congratulazioni all'utente
 }
 
-function segnalaErrore() {
+function reportError() {
     // Messaggio in caso di errore nell'indovinare il personaggio
 }
 
