@@ -1,0 +1,85 @@
+body {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  font-family: 'Times New Roman', Helvetica; 
+  font-size: 1.56vw;
+  color: black;
+  text-align: center
+}
+
+h2 {
+  font-family: 'Times New Roman' , Helvetica;
+  font-size: 1.04vw;
+  color: black;
+  text-align: justify
+}
+
+h3 {
+  font-size: 1.30vw;
+  font-family: 'Times New Roman' , Helvetica;
+  color: black;
+  text-align: center;
+}
+
+#parent-container {
+  z-index: 1;
+  background-color: rgba(0, 70, 201, 0.39);
+  height: 81.50vw;
+  margin: 0.52vw;
+  border: 0.05vw solid #000;
+}
+
+#header {
+  z-index: 3;
+  position:relative;
+  background-color: rgb(0, 115, 247);
+  height: 4vw;
+  margin: 0.52vw;
+  border: 0.15vw solid #000;
+}
+
+#questions-container {
+  background-color: rgba(44, 241, 255, 0.514);
+  z-index: 4;
+  left: 1vw;
+  top: 7vw;
+  position: absolute;
+  Width: 60vw;
+  height: 70vw;
+  margin: 0.52vw;
+  border: 0.05vw solid #000;
+}
+
+#genie-container {
+  background-color:  rgba(44, 241, 255, 0.514);
+  z-index: 4;
+  right: 1vw;
+  top: 7vw;
+  position: absolute;
+  Width: 35vw;
+  height: 70vw;
+  margin: 0.52vw;
+  border: 0.05vw solid #000;
+}
+  
+#footer { 
+  background-color: rgb(0, 135, 153);
+  height: 2.61vw;
+  z-index: 5;
+  position: relative;
+  margin-left: 0.52vw;
+  margin-right: 0.52vw;
+  bottom: -73vw;
+  border: 0.16vw solid #000;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.94vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;               
+}
