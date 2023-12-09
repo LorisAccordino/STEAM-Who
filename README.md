@@ -124,7 +124,7 @@ Nella progettazione del gioco, sono state scelte specifiche strutture dati, come
     ];
     ```
 
-2. L'array questions contiene una serie di domande a risposta multipla. Ogni domanda ha un testo e una risposta associata rappresentata da un'espressione che sarà valutata durante il gioco. Le domande sono progettate per determinare le caratteristiche del personaggio a cui l'utente sta pensando.
+2. L'array `questions` contiene una serie di domande a risposta multipla. Ogni domanda ha un testo e una risposta associata rappresentata da un'espressione che sarà valutata durante il gioco. Le domande sono progettate per determinare le caratteristiche del personaggio a cui l'utente sta pensando.
 
     ```javascript
     const questions = [
