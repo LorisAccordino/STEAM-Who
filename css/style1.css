@@ -56,7 +56,6 @@ h3 {
 }
 
 #genie-container {
-  background-color:  rgba(44, 241, 255, 0.514);
   z-index: 4;
   right: 1vw;
   top: 7vw;
@@ -64,7 +63,6 @@ h3 {
   Width: 35vw;
   height: 70vw;
   margin: 0.52vw;
-  border: 0.05vw solid #000;
 }
   
 #footer { 
@@ -83,3 +81,64 @@ h3 {
   align-items: center;
   justify-content: center;               
 }
+
+
+#yes-button {
+  transition: 1s;
+  background-color:rgb(29, 211, 224);
+  width: 2.6vw;
+  height: 2.6vw;
+  top: 10.42vw;
+  margin-left: 25vw;
+  position:absolute;
+  border: 0.052vw solid #000;
+  font-size: 0.93vw;
+  text-align: center;
+  align-content: center;
+  }
+
+#yes-button:hover { 
+    width: 5vw;
+    height: 5vw;
+  }
+
+
+  #no-button {
+    transition: 1s;
+    background-color:rgb(29, 211, 224);
+    width: 2.6vw;
+    height: 2.6vw;
+    top: 10.42vw;
+    margin-left: 30vw;
+    position:absolute;
+    border: 0.052vw solid #000;
+    font-size: 0.93vw;
+    text-align: center;
+    align-content: center;
+    }
+  
+  #no-button:hover { 
+      width: 5vw;
+      height: 5vw;
+    }
+
+
+#reset-button{
+  transition: 1s;
+  background-color:rgb(29, 211, 224);
+  width: 5vw;
+  height: 3vw;
+  top: 15vw;
+  margin-left: 26.5vw;
+  position:absolute;
+  border: 0.052vw solid #000;
+  font-size: 0.93vw;
+  text-align: center;
+  align-content: center;
+}
+  
+#reset-button:hover{
+  width: 6vw;
+  height: 4vw;
+}
+    
