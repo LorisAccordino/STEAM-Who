@@ -106,7 +106,7 @@ function nextQuestion() {
 
 	// Verifica se non ci sono più personaggi, secondo i filtri
 	if (remainingCharacters.length === 0) {
-		reportError();
+		resultOfTheGuess(false);
 		return;
 	}
 
