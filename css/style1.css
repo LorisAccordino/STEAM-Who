@@ -1,27 +1,26 @@
 body {
-  background-image: url('../img/bg.jpg');
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
 h1 {
-  font-family: 'Times New Roman', Helvetica; 
+  font-family: "Times New Roman", Helvetica;
   font-size: 1.56vw;
   color: black;
-  text-align: center
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Times New Roman' , Helvetica;
+  font-family: "Times New Roman", Helvetica;
   font-size: 1.04vw;
   color: black;
-  text-align: justify
+  text-align: justify;
 }
 
 h3 {
-  font-size: 1.30vw;
-  font-family: 'Times New Roman' , Helvetica;
+  font-size: 1.3vw;
+  font-family: "Times New Roman", Helvetica;
   color: black;
   text-align: center;
 }
@@ -29,14 +28,14 @@ h3 {
 #parent-container {
   z-index: 1;
   background-color: rgba(0, 70, 201, 0.39);
-  height: 81.50vw;
+  height: 81.5vw;
   margin: 0.52vw;
   border: 0.05vw solid #000;
 }
 
 #header {
   z-index: 3;
-  position:relative;
+  position: relative;
   background-color: rgb(0, 115, 247);
   height: 4vw;
   margin: 0.52vw;
@@ -49,7 +48,7 @@ h3 {
   left: 1vw;
   top: 7vw;
   position: absolute;
-  Width: 60vw;
+  width: 60vw;
   height: 70vw;
   margin: 0.52vw;
   border: 0.05vw solid #000;
@@ -60,12 +59,12 @@ h3 {
   right: 1vw;
   top: 7vw;
   position: absolute;
-  Width: 35vw;
+  width: 35vw;
   height: 70vw;
   margin: 0.52vw;
 }
-  
-#footer { 
+
+#footer {
   background-color: rgb(0, 135, 153);
   height: 2.61vw;
   z-index: 5;
@@ -79,66 +78,62 @@ h3 {
   font-size: 0.94vw;
   display: flex;
   align-items: center;
-  justify-content: center;               
+  justify-content: center;
 }
 
-
 #yes-button {
-  transition: 1s;
-  background-color:rgb(29, 211, 224);
+  transition: 0.5s;
+  background-color: rgb(29, 211, 224);
   width: 2.6vw;
   height: 2.6vw;
   top: 10.42vw;
   margin-left: 25vw;
-  position:absolute;
+  position: absolute;
   border: 0.052vw solid #000;
   font-size: 0.93vw;
   text-align: center;
   align-content: center;
-  }
+}
 
-#yes-button:hover { 
-    width: 5vw;
-    height: 5vw;
-  }
+#yes-button:hover {
+  width: 5vw;
+  height: 5vw;
+}
 
+#no-button {
+  transition: 0.5s;
+  background-color: rgb(29, 211, 224);
+  width: 2.6vw;
+  height: 2.6vw;
+  top: 10.42vw;
+  margin-left: 30vw;
+  position: absolute;
+  border: 0.052vw solid #000;
+  font-size: 0.93vw;
+  text-align: center;
+  align-content: center;
+}
 
-  #no-button {
-    transition: 1s;
-    background-color:rgb(29, 211, 224);
-    width: 2.6vw;
-    height: 2.6vw;
-    top: 10.42vw;
-    margin-left: 30vw;
-    position:absolute;
-    border: 0.052vw solid #000;
-    font-size: 0.93vw;
-    text-align: center;
-    align-content: center;
-    }
-  
-  #no-button:hover { 
-      width: 5vw;
-      height: 5vw;
-    }
+#no-button:hover {
+  width: 5vw;
+  height: 5vw;
+}
 
-
-#reset-button{
-  transition: 1s;
-  background-color:rgb(29, 211, 224);
+#reset-button {
+  transition: 0.5s;
+  background-color: rgb(29, 211, 224);
   width: 5vw;
   height: 3vw;
   top: 15vw;
   margin-left: 26.5vw;
-  position:absolute;
+  position: absolute;
   border: 0.052vw solid #000;
   font-size: 0.93vw;
   text-align: center;
   align-content: center;
 }
-  
-#reset-button:hover{
+
+#reset-button:hover {
   width: 6vw;
   height: 4vw;
 }
-    

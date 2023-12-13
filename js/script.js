@@ -194,9 +194,9 @@ function resultOfTheGuess(guessed) {
 
 // Funzione per impostare la visibilità dei pulsanti
 function setButtonVisibility(yesVisible, noVisible, resetVisible) {
-	yesButton.style.visibility = yesVisible ? 'visible' : 'hidden';
-	noButton.style.visibility = noVisible ? 'visible' : 'hidden';
-	resetButton.style.visibility = resetVisible ? 'visible' : 'hidden';
+	yesButton.style.display = yesVisible ? 'block' : 'none';
+	noButton.style.display = noVisible ? 'block' : 'none';
+	resetButton.style.display = resetVisible ? 'block' : 'none';
 }
 
 // Funzione per impostare le callback (listener) dei pulsanti
