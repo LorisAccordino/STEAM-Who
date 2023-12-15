@@ -85,9 +85,6 @@ const finalAnswers = {
 	]
 }
 
-const confusedThreshold = 1;
-var questionCount = null;
-
 var questionText = null;
 var genieImage = null;
 var yesButton = null;
@@ -107,7 +104,6 @@ var handleResetAnswer = function() {};
 
 
 function nextQuestion() {
-
 	// Verifica se non ci sono più personaggi, secondo i filtri
 	if (remainingCharacters.length === 0) {
 		resultOfTheGuess(false);
@@ -129,14 +125,6 @@ function nextQuestion() {
 
 	// Rimuovi la domanda utilizzata dalla lista delle domande
 	remainingQuestions = remainingQuestions.filter(item => item !== selectedQuestion);
-
-
-	if (questionCount >= confusedThreshold) {
-		genieImage.src = "img/confused-genie.png"
-	}
-
-	// Incrementa il counter delle domande
-	questionCount++;
 }
 
 function processAnswer(expression, answer) {
@@ -182,6 +170,7 @@ function evaluateExpression(expression, features) {
 
 function askConfirmation(character) {
 	questionText.textContent = 'La persona a cui stai pensando è: ' + character.name + '?';
+	genieImage.src = "img/confused-genie.png"
 
 	// Assegna event listener ad ogni pulsante
 	setButtonListeners(function() { resultOfTheGuess(true) }, function() { resultOfTheGuess(false) }, null);
@@ -192,9 +181,11 @@ function resultOfTheGuess(guessed) {
 
 	if (guessed) {
 		answers = finalAnswers.right;
+		genieImage.src = "img/happy-genie.png"
 	}
 	else {
 		answers = finalAnswers.wrong;
+		genieImage.src = "img/sad-genie.png"
 	}
 
 	// Scegli una risposta a caso dalla lista delle risposta
@@ -242,6 +233,7 @@ function updateListenerSafe(element, event, oldCallback, newCallback) {
 function akinator() {
 	remainingCharacters = characters;
 	remainingQuestions = questions;
+	genieImage.src = "img/idle-genie.png"
 
 	// Modifica la visibilità dei pulsanti
 	setButtonVisibility(true, true, false);
