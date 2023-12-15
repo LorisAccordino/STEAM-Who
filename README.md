@@ -2,7 +2,11 @@
 Un quiz stile Akinator circa alcuni importanti personaggi STEAM
 
 # Idea e analisi
-Work in progress...
+- idea iniziale
+- codice (loris)
+- css (accolla e carnevale)
+- personaggi (noce e alejo)
+- animazione (foglieni)
 
 # Funzionamento dello script
 Questo script JavaScript implementa un semplice meccanismo per indovinare un personaggio famoso attraverso una serie di domande a risposta sì/no. 
