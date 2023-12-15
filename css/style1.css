@@ -6,20 +6,20 @@ body {
 
 h1 {
   font-family: "Times New Roman", Helvetica;
-  font-size: 1.56vw;
+  font-size: 1.6vw;
   color: black;
   text-align: center;
 }
 
 h2 {
   font-family: "Times New Roman", Helvetica;
-  font-size: 1.04vw;
+  font-size: 1vw;
   color: black;
-  text-align: justify;
+  text-align: center;
 }
 
-h3 {
-  font-size: 1.3vw;
+#question-text{
+  font-size: 2.5vw;
   font-family: "Times New Roman", Helvetica;
   color: black;
   text-align: center;
@@ -28,7 +28,7 @@ h3 {
 #parent-container {
   z-index: 1;
   background-color: rgba(0, 70, 201, 0.39);
-  height: 81.5vw;
+  height: 52vw;
   margin: 0.52vw;
   border: 0.05vw solid #000;
 }
@@ -49,7 +49,7 @@ h3 {
   top: 7vw;
   position: absolute;
   width: 60vw;
-  height: 70vw;
+  height: 40.5vw;
   margin: 0.52vw;
   border: 0.05vw solid #000;
 }
@@ -60,7 +60,7 @@ h3 {
   top: 7vw;
   position: absolute;
   width: 35vw;
-  height: 70vw;
+  height: 40.5vw;
   margin: 0.52vw;
 }
 
@@ -71,7 +71,7 @@ h3 {
   position: relative;
   margin-left: 0.52vw;
   margin-right: 0.52vw;
-  bottom: -73vw;
+  bottom: -43vw;
   border: 0.16vw solid #000;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -82,7 +82,7 @@ h3 {
 }
 
 #yes-button {
-  transition: 0.5s;
+  transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
   width: 2.6vw;
   height: 2.6vw;
@@ -93,15 +93,16 @@ h3 {
   font-size: 0.93vw;
   text-align: center;
   align-content: center;
+  display: inline-block;
 }
 
 #yes-button:hover {
-  width: 5vw;
-  height: 5vw;
+  transform: scale(2.0, 2.0);
+  transform-origin: center;
 }
 
 #no-button {
-  transition: 0.5s;
+  transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
   width: 2.6vw;
   height: 2.6vw;
@@ -112,18 +113,19 @@ h3 {
   font-size: 0.93vw;
   text-align: center;
   align-content: center;
+  display: inline-block;
 }
 
 #no-button:hover {
-  width: 5vw;
-  height: 5vw;
+  transform: scale(2.0, 2.0);
+  transform-origin: center;
 }
 
 #reset-button {
-  transition: 0.5s;
+  transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
   width: 5vw;
-  height: 3vw;
+  height: 5vw;
   top: 15vw;
   margin-left: 26.5vw;
   position: absolute;
@@ -131,9 +133,10 @@ h3 {
   font-size: 0.93vw;
   text-align: center;
   align-content: center;
+  display: inline-block;
 }
 
 #reset-button:hover {
-  width: 6vw;
-  height: 4vw;
+  transform: scale(2.0, 2.0);
+  transform-origin: center;
 }
