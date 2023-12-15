@@ -85,7 +85,11 @@ const finalAnswers = {
 	]
 }
 
+const confusedThreshold = 1;
+var questionCount = null;
+
 var questionText = null;
+var genieImage = null;
 var yesButton = null;
 var noButton = null;
 var resetButton = null;
@@ -125,6 +129,14 @@ function nextQuestion() {
 
 	// Rimuovi la domanda utilizzata dalla lista delle domande
 	remainingQuestions = remainingQuestions.filter(item => item !== selectedQuestion);
+
+
+	if (questionCount >= confusedThreshold) {
+		genieImage.src = "img/confused-genie.png"
+	}
+
+	// Incrementa il counter delle domande
+	questionCount++;
 }
 
 function processAnswer(expression, answer) {
@@ -244,6 +256,7 @@ function akinator() {
 // Avvio del gioco
 window.onload = function() {
 	questionText = document.getElementById('question-text');
+	genieImage = document.getElementById('genie-image');
 	yesButton = document.getElementById('yes-button');
 	noButton = document.getElementById('no-button');
 	resetButton = document.getElementById('reset-button');
