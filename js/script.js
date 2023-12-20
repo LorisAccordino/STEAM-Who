@@ -94,13 +94,13 @@ const characters = [
 			sex: "m",
 			colorOfHair: "grey",
 			colorOfEyes: "blue",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"science",
 				"history"
 			],
 			specialities: [
-				""
+				undefined
 			],
 			awards: 1,
 			nobels: 0,
@@ -115,7 +115,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "grey",
 			colorOfEyes: "brown",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"technological",
 				"entrepreneur"
@@ -136,7 +136,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "bald",
 			colorOfEyes: "brown",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"technological",
 				"investor"
@@ -146,7 +146,7 @@ const characters = [
 			],
 			awards: 3,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -157,7 +157,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "white",
 			colorOfEyes: "blue",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"technological",
 				"entrepreneur"
@@ -167,7 +167,7 @@ const characters = [
 			],
 			awards: 9,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -178,7 +178,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "blonde",
 			colorOfEyes: "blue",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"technological",
 				"entrepreneur"
@@ -188,7 +188,7 @@ const characters = [
 			],
 			awards: 6,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -197,9 +197,9 @@ const characters = [
 			yearOfBirth: 1967,
 			country: "india",
 			sex: "m",
-			colorOfHair: "",
+			colorOfHair: undefined,
 			colorOfEyes: "black",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"technological"
 			],
@@ -208,7 +208,7 @@ const characters = [
 			],
 			awards: 4,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -218,7 +218,7 @@ const characters = [
 			country: "croatia",
 			sex: "m",
 			colorOfHair: "black",
-			colorOfEyes: "",
+			colorOfEyes: undefined,
 			colorOfMustache: "black",
 			professions: [
 				"inventor",
@@ -240,8 +240,8 @@ const characters = [
 			country: "italy",
 			sex: "m",
 			colorOfHair: "white",
-			colorOfEyes: "",
-			colorOfMustache: "",
+			colorOfEyes: undefined,
+			colorOfMustache: undefined,
 			professions: [
 				"inventor"
 			],
@@ -260,8 +260,8 @@ const characters = [
 			country: "usa",
 			sex: "m",
 			colorOfHair: "white",
-			colorOfEyes: "",
-			colorOfMustache: "",
+			colorOfEyes: undefined,
+			colorOfMustache: undefined,
 			professions: [
 				"entrepreneur"
 			],
@@ -280,7 +280,7 @@ const characters = [
 			country: "uk",
 			sex: "m",
 			colorOfHair: "black",
-			colorOfEyes: "",
+			colorOfEyes: undefined,
 			colorOfMustache: "black",
 			professions: [
 				"engineer"
@@ -301,7 +301,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "brown",
 			colorOfEyes: "blue",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"inventor",
 				"entrepreneur"
@@ -312,7 +312,7 @@ const characters = [
 			],
 			awards: 5,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -344,7 +344,7 @@ const characters = [
 			country: "netherlands",
 			sex: "m",
 			colorOfHair: "blonde",
-			colorOfEyes: "",
+			colorOfEyes: undefined,
 			colorOfMustache: "blonde",
 			professions: [
 				"artist"
@@ -364,8 +364,8 @@ const characters = [
 			country: "mexico",
 			sex: "f",
 			colorOfHair: "black",
-			colorOfEyes: "",
-			colorOfMustache: "",
+			colorOfEyes: undefined,
+			colorOfMustache: undefined,
 			professions: [
 				"artist"
 			],
@@ -383,9 +383,9 @@ const characters = [
 			yearOfBirth: 1881,
 			country: "spain",
 			sex: "m",
-			colorOfHair: "",
+			colorOfHair: undefined,
 			colorOfEyes: "brown",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"artist"
 			],
@@ -404,7 +404,7 @@ const characters = [
 			country: "spain",
 			sex: "m",
 			colorOfHair: "black",
-			colorOfEyes: "",
+			colorOfEyes: undefined,
 			colorOfMustache: "black",
 			professions: [
 				"artist"
@@ -426,7 +426,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "white",
 			colorOfEyes: "green",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"physic",
 				"matematich"
@@ -448,7 +448,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "blonde",
 			colorOfEyes: "blue",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"matematich"
 			],
@@ -468,7 +468,7 @@ const characters = [
 			country: "greece",
 			sex: "m",
 			colorOfHair: "white",
-			colorOfEyes: "",
+			colorOfEyes: undefined,
 			colorOfMustache: "white",
 			professions: [
 				"physic",
@@ -513,7 +513,7 @@ const characters = [
 			sex: "m",
 			colorOfHair: "brown",
 			colorOfEyes: "blu",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"physic",
 				"matematich",
@@ -615,6 +615,7 @@ function nextQuestion() {
 function processAnswer(expression, answer) {
 	// Filtra i personaggi, in base alla risposta
 	remainingCharacters = filterCharacters(expression, answer);
+	console.log('CHARACTERS: ', remainingCharacters);
 	nextQuestion();
 }
 
@@ -630,6 +631,7 @@ function evaluateExpression(expression, features, answerValue) {
 	var resultValue = undefined;
 
 	if (featureValue === undefined) {
+		console.log('SKIPPED QUESTIONS');
 		return true;
 	}
 
