@@ -28,7 +28,7 @@ const characters = [
 			sex: "f",
 			colorOfHair: "blonde",
 			colorOfEyes: "brown",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"physicist",
 				"chemist"
@@ -51,7 +51,7 @@ const characters = [
 			sex: "f",
 			colorOfHair: "grey",
 			colorOfEyes: "brown",
-			colorOfMustache: "",
+			colorOfMustache: undefined,
 			professions: [
 				"primatologist",
 				"ethologist",
@@ -62,7 +62,7 @@ const characters = [
 			],
 			awards: 5,
 			nobels: 0,
-			yearOfDeath: -1
+			yearOfDeath: undefined
 		}
 	},
 	{
@@ -72,8 +72,8 @@ const characters = [
 			country: "uk",
 			sex: "f",
 			colorOfHair: "brown",
-			colorOfEyes: "",
-			colorOfMustache: "",
+			colorOfEyes: undefined,
+			colorOfMustache: undefined,
 			professions: [
 				"chemist",
 				"crystallographer"
@@ -407,37 +407,50 @@ function processAnswer(expression, answer) {
 
 function filterCharacters(expression, answerValue) {
 	return remainingCharacters.filter(character => {
-		return evaluateExpression(expression, character.features) == answerValue;
+		return evaluateExpression(expression, character.features, answerValue);
 	});
 }
 
-function evaluateExpression(expression, features) {
+function evaluateExpression(expression, features, answerValue) {
 	const [feature, operator, val] = expression.split(' ');
 	const featureValue = features[feature];
+	var resultValue = undefined;
+
+	if (featureValue === undefined) {
+		return true;
+	}
 
 	// Funzione per verificare se un valore è presente in un array
 	const arrayContainsValue = (arr, value) => Array.isArray(arr) && arr.includes(value);
 
 	switch (operator) {
 		case '<':
-			return parseFloat(featureValue) < parseFloat(val);
+			resultValue = parseFloat(featureValue) < parseFloat(val);
+			break;
 		case '>':
-			return parseFloat(featureValue) > parseFloat(val);
+			resultValue = parseFloat(featureValue) > parseFloat(val);
+			break;
 		case '<=':
-			return parseFloat(featureValue) <= parseFloat(val);
+			resultValue = parseFloat(featureValue) <= parseFloat(val);
+			break;
 		case '>=':
-			return parseFloat(featureValue) >= parseFloat(val);
+			resultValue = parseFloat(featureValue) >= parseFloat(val);
+			break;
 		case '!=':
-			return featureValue != val && !arrayContainsValue(featureValue, val);
+			resultValue = featureValue != val && !arrayContainsValue(featureValue, val);
+			break;
 		case '==':
 			if (Array.isArray(featureValue)) {
-				return arrayContainsValue(featureValue, val);
+				resultValue = arrayContainsValue(featureValue, val);
 			} else {
-				return featureValue == val;
+				resultValue = featureValue == val;
 			}
+			break;
 		default:
-			return false;
+			resultValue = false;
 	}
+
+	return resultValue == answerValue;
 }
 
 function askConfirmation(character) {
