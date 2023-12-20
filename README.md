@@ -1,25 +1,25 @@
 # STEAM Who
-Un quiz stile Akinator circa alcuni importanti personaggi STEAM
+Un quiz stile Akinator circa alcuni importanti personaggi S.T.E.A.M.
 
-# Idea e analisi
+## Idea e analisi
 Nel nostro progetto, ci siamo dedicati a ricreare il famoso gioco di Akinator, focalizzandoci su personaggi appartenenti alla categoria S.T.E.A.M. Per garantire un equo contributo da parte di tutti i membri del gruppo, abbiamo diviso il lavoro in quattro parti distinte.
+
+## Suddivisione del lavoro
 
 La prima parte riguarda il codice del gioco ed è stata sviluppata da Loris Accordino, che si è dedicato a creare la struttura logica e funzionale del nostro Akinator.
 
-La seconda parte è stata gestita da Francesco Accolla e Simone Carnevale, che hanno lavorato insieme per definire lo stile del gioco attraverso il CSS. Questa componente è fondamentale per garantire un'esperienza utente piacevole e coerente con il tema S.T.E.A.M.
+La seconda parte è stata gestita da Francesco Accolla e Simone Carnevale, che hanno lavorato insieme per definire lo stile del gioco attraverso il CSS.
 
-La terza parte del nostro progetto è stata affidata a Jessica Noce e Alejo Costamagna, i quali si sono occupati della ricerca e dell'inclusione dei personaggi nella categoria S.T.E.A.M. Una componente cruciale per garantire una vasta e interessante base di dati di personaggi.
+La terza parte del nostro progetto è stata affidata a Jessica Noce e Alejo Costamagna, i quali si sono occupati della ricerca e dell'inclusione dei personaggi nella categoria S.T.E.A.M.
 
 Infine, la quarta parte riguarda l'animazione del genio Akinator e è stata curata da Federico Foglieni. L'animazione contribuirà a dare vita al nostro gioco, rendendolo più coinvolgente e divertente per gli utenti.
 
 Questa suddivisione dei compiti ci ha consentito di lavorare in modo efficiente e produttivo, sfruttando le competenze specifiche di ciascun membro del team. Siamo fiduciosi che il risultato finale sarà un Akinator dedicato al mondo S.T.E.A.M. che appassionerà e intratterrà gli utenti.
 
 
-- codice (loris)
-
-
 - css (accolla e carnevale)
 
+# Ricerca generale
 
 Per questo lavoro, ci siamo proposti di selezionare cinque personaggi per ogni categoria, affrontando un'approfondita ricerca per garantire una varietà e un interesse significativi. Durante il processo di ricerca, ci siamo concentrati su diverse informazioni chiave per arricchire l'esperienza dell'utente nel gioco.
 
@@ -29,12 +29,9 @@ La loro professione è stata un aspetto fondamentale della nostra indagine, perm
 
 Oltre alle informazioni biografiche e professionali, abbiamo anche considerato le caratteristiche fisiche, quando disponibili, per rendere i personaggi più riconoscibili e per consentire agli utenti di identificarli con maggiore facilità durante il gioco.
 
-Questo approccio accurato alla raccolta di informazioni ci ha permesso di creare una selezione di personaggi che offrono non solo una gamma ampia e variegata, ma anche un livello di dettaglio che arricchisce l'esperienza del giocatore nel mondo di S.T.E.A.M.
-
+# Aspetti grafici
 
 Per la parte di animazione dedicata al genio, abbiamo adottato uno stile di pixel art ispirato al personaggio del genio del film Aladino. Dopo un'accurata selezione del personaggio da ritrarre, ci siamo impegnati nella creazione di quattro frame distinti, ciascuno dei quali cattura espressioni diverse del genio, in sintonia con le varie situazioni che potrebbero emergere durante il gioco.
-
-Abbiamo posto particolare enfasi nella resa delle espressioni del genio, cercando di renderle eloquenti e facilmente riconoscibili. Le quattro espressioni che abbiamo sviluppato comprendono la felicità, la tristezza, l'incertezza e la contentezza, al fine di fornire una gamma completa di stati d'animo che si adattano alle diverse fasi del gioco.
 
 La scelta della pixel art è stata motivata da un desiderio di conferire un tocco di originalità e di evocare la nostalgia dei giochi classici, contribuendo a creare un'esperienza visiva accattivante per gli utenti. L'utilizzo di quattro frame distinti assicura una transizione fluida tra le espressioni, conferendo al genio una dinamicità che arricchisce l'interattività all'interno del nostro Akinator dedicato al mondo S.T.E.A.M.
 
@@ -43,7 +40,7 @@ Questo script JavaScript implementa un semplice meccanismo per indovinare un per
 Le domande sono progettate per un filtraggio progressivo, in modo da restringere gradualmente le opzioni fino a indovinare correttamente il personaggio in mente dell'utente.
 
 ## Pseudocodice generale
-Di seguito è fornito un pseudocodice che rappresenta il funzionamento logico dello script:
+Di seguito è fornito un pseudocodice che rappresenta (a grandi linee) il funzionamento logico dello script:
 
 ```javascript
 // ... Inizializzazione delle variabili
