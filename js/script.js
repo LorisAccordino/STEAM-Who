@@ -42,7 +42,197 @@ const characters = [
 			nobels: 2,
 			yearOfDeath: 1934
 		}
-	}
+	},
+	{
+		name: 'Jane Goodall',
+		features: {
+			yearOfBirth: 1934,
+			country: "england",
+			sex: "f",
+			colorOfHair: "grey",
+			colorOfEyes: "brown",
+			colorOfMustache: "",
+			professions: [
+				"primatologist",
+				"ethologist",
+				"anthropologist"
+			],
+			specialities: [
+				"primate reserch"
+			],
+			awards: 5,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
+	{
+		name: 'Rosalind Franklin',
+		features: {
+			yearOfBirth: 1920,
+			country: "uk",
+			sex: "f",
+			colorOfHair: "brown",
+			colorOfEyes: "",
+			colorOfMustache: "",
+			professions: [
+				"chemist",
+				"crystallographer"
+			],
+			specialities: [
+				"dna structur"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 1958
+		}
+	},
+	{
+		name: 'Piero Angela',
+		features: {
+			yearOfBirth: 1928,
+			country: "italy",
+			sex: "m",
+			colorOfHair: "grey",
+			colorOfEyes: "blue",
+			colorOfMustache: "",
+			professions: [
+				"science",
+				"history"
+			],
+			specialities: [
+				""
+			],
+			awards: 1,
+			nobels: 0,
+			yearOfDeath: 2022
+		}
+	},
+	{
+		name: 'Steve Jobs',
+		features: {
+			yearOfBirth: 1955,
+			country: "usa",
+			sex: "m",
+			colorOfHair: "grey",
+			colorOfEyes: "brown",
+			colorOfMustache: "",
+			professions: [
+				"technological",
+				"entrepreneur"
+			],
+			specialities: [
+				"cellphone producer"
+			],
+			awards: 4,
+			nobels: 0,
+			yearOfDeath: 2011
+		}
+	},
+	{
+		name: 'Jeff bezos',
+		features: {
+			yearOfBirth: 1964,
+			country: "usa",
+			sex: "m",
+			colorOfHair: "bald",
+			colorOfEyes: "brown",
+			colorOfMustache: "",
+			professions: [
+				"technological",
+				"investor"
+			],
+			specialities: [
+				"founder of amazon"
+			],
+			awards: 3,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
+	{
+		name: 'Bill Gates',
+		features: {
+			yearOfBirth: 1955,
+			country: "usa",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "blue",
+			colorOfMustache: "",
+			professions: [
+				"technological",
+				"entrepreneur"
+			],
+			specialities: [
+				"founder of microsoft"
+			],
+			awards: 9,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
+	{
+		name: 'Mark Zuckerberg',
+		features: {
+			yearOfBirth: 1984,
+			country: "usa",
+			sex: "m",
+			colorOfHair: "blonde",
+			colorOfEyes: "blue",
+			colorOfMustache: "",
+			professions: [
+				"technological",
+				"entrepreneur"
+			],
+			specialities: [
+				"founder of facebook"
+			],
+			awards: 6,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
+	{
+		name: 'Satya Nadella',
+		features: {
+			yearOfBirth: 1967,
+			country: "india",
+			sex: "m",
+			colorOfHair: "",
+			colorOfEyes: "black",
+			colorOfMustache: "",
+			professions: [
+				"technological"
+			],
+			specialities: [
+				"microsoft employer"
+			],
+			awards: 4,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
+	{
+		name: 'Nikola Tesla',
+		features: {
+			yearOfBirth: 1856,
+			country: "croatia",
+			sex: "m",
+			colorOfHair: "black",
+			colorOfEyes: "",
+			colorOfMustache: "black",
+			professions: [
+				"inventor",
+				"physicist",
+				"engineer"
+			],
+			specialities: [
+				"basic eletrical system"
+			],
+			awards: 4,
+			nobels: 0,
+			yearOfDeath: 1943
+		}
+	},
 ];
 
 const questions = [
