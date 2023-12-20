@@ -233,6 +233,88 @@ const characters = [
 			yearOfDeath: 1943
 		}
 	},
+	{
+		name: 'Thomas Edison',
+		features: {
+			yearOfBirth: 1847,
+			country: "italy",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "",
+			colorOfMustache: "",
+			professions: [
+				"inventor"
+			],
+			specialities: [
+				"telegraph"
+			],
+			awards: 12,
+			nobels: 0,
+			yearOfDeath: 1931
+		}
+	},
+	{
+		name: 'Henry Ford',
+		features: {
+			yearOfBirth: 1863,
+			country: "usa",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "",
+			colorOfMustache: "",
+			professions: [
+				"entrepreneur"
+			],
+			specialities: [
+				"assembly line"
+			],
+			awards: 3,
+			nobels: 0,
+			yearOfDeath: 1947
+		}
+	},
+	{
+		name: 'Isambard Kingdom Brunel',
+		features: {
+			yearOfBirth: 1806,
+			country: "uk",
+			sex: "m",
+			colorOfHair: "black",
+			colorOfEyes: "",
+			colorOfMustache: "black",
+			professions: [
+				"engineer"
+			],
+			specialities: [
+				"great eastern"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 1859
+		}
+	},
+	{
+		name: 'Elon Musk',
+		features: {
+			yearOfBirth: 1971,
+			country: "sudafrica",
+			sex: "m",
+			colorOfHair: "brown",
+			colorOfEyes: "blue",
+			colorOfMustache: "",
+			professions: [
+				"inventor",
+				"entrepreneur"
+			],
+			specialities: [
+				"tesla",
+				"space X"
+			],
+			awards: 5,
+			nobels: 0,
+			yearOfDeath: -1
+		}
+	},
 ];
 
 const questions = [
