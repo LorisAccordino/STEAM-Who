@@ -315,6 +315,219 @@ const characters = [
 			yearOfDeath: -1
 		}
 	},
+	{
+		name: 'Leonardo da Vinci',
+		features: {
+			yearOfBirth: 1452,
+			country: "italy",
+			sex: "m",
+			colorOfHair: "whie",
+			colorOfEyes: "black",
+			colorOfMustache: "white",
+			professions: [
+				"inventor",
+				"artist"
+			],
+			specialities: [
+				"ornitottero",
+				"self-propelled wagon"
+			],
+			awards: 1,
+			nobels: 0,
+			yearOfDeath: 1519
+		}
+	},
+	{
+		name: 'Vincent Van Gogh',
+		features: {
+			yearOfBirth: 1853,
+			country: "netherlands",
+			sex: "m",
+			colorOfHair: "blonde",
+			colorOfEyes: "",
+			colorOfMustache: "blonde",
+			professions: [
+				"artist"
+			],
+			specialities: [
+				"la notte stellata"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 1890
+		}
+	},
+	{
+		name: 'Frida Kahlo',
+		features: {
+			yearOfBirth: 1907,
+			country: "mexico",
+			sex: "f",
+			colorOfHair: "black",
+			colorOfEyes: "",
+			colorOfMustache: "",
+			professions: [
+				"artist"
+			],
+			specialities: [
+				"expression of freedom"
+			],
+			awards: 2,
+			nobels: 0,
+			yearOfDeath: 1954
+		}
+	},
+	{
+		name: 'Pablo Picasso',
+		features: {
+			yearOfBirth: 1881,
+			country: "spain",
+			sex: "m",
+			colorOfHair: "",
+			colorOfEyes: "brown",
+			colorOfMustache: "",
+			professions: [
+				"artist"
+			],
+			specialities: [
+				"periodo blu e rosa"
+			],
+			awards: 4,
+			nobels: 0,
+			yearOfDeath: 1973
+		}
+	},
+	{
+		name: 'Salvador Dali',
+		features: {
+			yearOfBirth: 1904,
+			country: "spain",
+			sex: "m",
+			colorOfHair: "black",
+			colorOfEyes: "",
+			colorOfMustache: "black",
+			professions: [
+				"artist"
+			],
+			specialities: [
+				"surrealista",
+				"dadaista"
+			],
+			awards: 3,
+			nobels: 0,
+			yearOfDeath: 1989
+		}
+	},
+	{
+		name: 'Isaac Newton',
+		features: {
+			yearOfBirth: 1642,
+			country: "uk",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "green",
+			colorOfMustache: "",
+			professions: [
+				"physic",
+				"matematich"
+			],
+			specialities: [
+				"gravity",
+				"reflector telescope"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 1726
+		}
+	},
+	{
+		name: 'Carl Friedrich Gauss',
+		features: {
+			yearOfBirth: 1777,
+			country: "germany",
+			sex: "m",
+			colorOfHair: "blonde",
+			colorOfEyes: "blue",
+			colorOfMustache: "",
+			professions: [
+				"matematich"
+			],
+			specialities: [
+				"eptadecagono",
+				"modular arithmetic"
+			],
+			awards: 2,
+			nobels: 0,
+			yearOfDeath: 1855
+		}
+	},
+	{
+		name: 'Pitagora',
+		features: {
+			yearOfBirth: 575,
+			country: "greece",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "",
+			colorOfMustache: "white",
+			professions: [
+				"physic",
+				"matematich",
+				"scientist"
+			],
+			specialities: [
+				"geometry"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 495
+		}
+	},
+	{
+		name: 'Archimede',
+		features: {
+			yearOfBirth: 287,
+			country: "italy",
+			sex: "m",
+			colorOfHair: "white",
+			colorOfEyes: "brown",
+			colorOfMustache: "white",
+			professions: [
+				"physic",
+				"matematich"
+			],
+			specialities: [
+				"circle",
+				"floating bodies"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 212
+		}
+	},
+	{
+		name: 'Alan Turing',
+		features: {
+			yearOfBirth: 1912,
+			country: "uk",
+			sex: "m",
+			colorOfHair: "brown",
+			colorOfEyes: "blu",
+			colorOfMustache: "",
+			professions: [
+				"physic",
+				"matematich",
+				"technological"
+			],
+			specialities: [
+				"turing machine",
+				"teoria della computazione"
+			],
+			awards: 0,
+			nobels: 0,
+			yearOfDeath: 1954
+		}
+	},
 ];
 
 const questions = [
