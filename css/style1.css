@@ -20,7 +20,7 @@ h2 {
 }
 
 #question-text{
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: "Times New Roman", Helvetica;
   color: black;
   text-align: center;
@@ -48,16 +48,26 @@ h2 {
   padding: 0.1vw;
 }
 
+.immagine-nuvola{
+   width: 80vw;
+   height:20vw;
+   position: absolute;
+   right:8vw;
+   top:6vw;
+
+}
+
 #questions-container {
-  background-color: rgba(44, 241, 255, 0.514);
-  z-index: 4;
-  right: 1vw;
-  top: 5.5vw;
+  right: 15vw;
+  top: 5vw;
   position: absolute;
-  width: 60vw;
-  height: 40.5vw;
+  width: 55vw;
+  height: 7vw;
+  flex-direction: column;  
+  justify-content:center;
+  display: flex; 
   margin: 2.5vw;
-  border: 0.05vw solid #000;
+  border: 0.15vw solid #000;
 }
 
 #genie-container {
@@ -96,16 +106,16 @@ h2 {
 #yes-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
-  width: 2.6vw;
-  height: 2.6vw;
-  top: 10.42vw;
-  margin-left: 25vw;
+  width: 2vw;
+  height: 2vw;
+  top: 5vw;
+  margin-left: 22vw;
   position: absolute;
   border: 0.052vw solid #000;
   font-size: 0.93vw;
-  text-align: center;
-  align-content: center;
-  display: inline-block;
+  flex-direction: column;  
+  justify-content:center;
+  display: flex; 
 }
 
 #yes-button:hover {
@@ -116,16 +126,16 @@ h2 {
 #no-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
-  width: 2.6vw;
-  height: 2.6vw;
-  top: 10.42vw;
-  margin-left: 30vw;
+  width: 2vw;
+  height: 2vw;
+  top: 5vw;
+  margin-left: 27vw;
   position: absolute;
   border: 0.052vw solid #000;
   font-size: 0.93vw;
-  text-align: center;
-  align-content: center;
-  display: inline-block;
+  flex-direction: column;  
+  justify-content:center;
+  display: flex; 
 }
 
 #no-button:hover {
@@ -136,19 +146,21 @@ h2 {
 #reset-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
-  width: 5vw;
-  height: 5vw;
-  top: 15vw;
-  margin-left: 26.5vw;
+  width: 6vw;
+  height: 3vw;
+  top: 5vw;
+  margin-left: 23.5vw;
   position: absolute;
   border: 0.052vw solid #000;
   font-size: 0.93vw;
-  text-align: center;
-  align-content: center;
-  display: inline-block;
+  flex-direction: column;  
+  justify-content:center;
+  display: flex; 
 }
 
 #reset-button:hover {
   transform: scale(2.0, 2.0);
   transform-origin: center;
 }
+
+
