@@ -1,9 +1,12 @@
+/*nel body è possibile modificare l'immagine di sfondo*/
 body {
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+
+/*questo è testo contenuto nell'header*/
 h1 {
   font-family: "Times New Roman", Helvetica;
   font-size: 3vw;
@@ -12,6 +15,8 @@ h1 {
 
 }
 
+
+/*questo è il testo presente all'interno di tutti quei contenitori che possiedono le risposte sotto le domande*/
 h2 {
   font-family: "Times New Roman", Helvetica;
   font-size: 1vw;
@@ -19,13 +24,17 @@ h2 {
   text-align: center;
 }
 
+
+/*questo è il testo delle domande*/
 #question-text{
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: "Times New Roman", Helvetica;
   color: black;
   text-align: center;
 }
 
+
+/*questo è il contenitore che contiene tutti gli altri*/
 #parent-container {
   z-index: 1;
   background-color: rgba(0, 70, 201, 0.39);
@@ -35,11 +44,13 @@ h2 {
   padding: 0.1vw;
 }
 
+
+/*questo contenitore contiene l'intestazione del sito*/
 #header {
   z-index: 3;
   position: relative;
   background-color: rgb(0, 115, 247);
-  height: 5vw;
+  height: 3vw;
   margin: 0.52vw;
   border: 0.15vw solid #000;
   flex-direction: column;  
@@ -48,15 +59,20 @@ h2 {
   padding: 0.1vw;
 }
 
+
+/*questa e l'immagine della nuvola del genio*/
 .immagine-nuvola{
    width: 80vw;
    height:20vw;
    position: absolute;
    right:8vw;
    top:6vw;
-
+   z-index:300;
 }
 
+
+/*questo è il contenitore nel quale sono presenti le domande ele risposte rapide*/
+/*il bordo è commentato, se ativato serve solo per vedere com'è posizionato il contenitore*/
 #questions-container {
   right: 15vw;
   top: 5vw;
@@ -67,9 +83,12 @@ h2 {
   justify-content:center;
   display: flex; 
   margin: 2.5vw;
-  border: 0.15vw solid #000;
+  z-index:310;
+  /*border: 0.15vw solid #000;*/
 }
 
+
+/*contenitore che contiene l'immagine del genio*/
 #genie-container {
   z-index: 3;
   left: 1vw;
@@ -81,10 +100,17 @@ h2 {
   padding: 0.1vw;
 }
 
+
+/*immagine del genio*/
 .genie.imagine{
   align-content: center;
+  position:absolute;
+  z-index:250;
 }
 
+
+
+/*contenitore contenente i riconoscimenti*/
 #footer {
   background-color: rgb(0, 135, 153);
   height: 2.61vw;
@@ -92,7 +118,7 @@ h2 {
   position: relative;
   margin-left: 0.52vw;
   margin-right: 0.52vw;
-  bottom: -42vw;
+  bottom: -43.5vw;
   border: 0.16vw solid #000;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -103,12 +129,14 @@ h2 {
   padding: 0.1vw;
 }
 
+
+/*pulsante si*/
 #yes-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
   width: 2vw;
   height: 2vw;
-  top: 5vw;
+  top: 4.5vw;
   margin-left: 22vw;
   position: absolute;
   border: 0.052vw solid #000;
@@ -118,17 +146,21 @@ h2 {
   display: flex; 
 }
 
+
+/*animazione pulsante si*/
 #yes-button:hover {
-  transform: scale(2.0, 2.0);
+  transform: scale(1.5, 1.5);
   transform-origin: center;
 }
 
+
+/*pulsante no*/
 #no-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
   width: 2vw;
   height: 2vw;
-  top: 5vw;
+  top: 4.5vw;
   margin-left: 27vw;
   position: absolute;
   border: 0.052vw solid #000;
@@ -138,17 +170,21 @@ h2 {
   display: flex; 
 }
 
+
+/*animazione pulsante no*/
 #no-button:hover {
-  transform: scale(2.0, 2.0);
+  transform: scale(1.5, 1.5);
   transform-origin: center;
 }
 
+
+/*pulsante di reset gioco*/
 #reset-button {
   transition: 0.5s ease;
   background-color: rgb(29, 211, 224);
-  width: 6vw;
-  height: 3vw;
-  top: 5vw;
+  width: 5vw;
+  height: 2.5vw;
+  top: 4.5vw;
   margin-left: 23.5vw;
   position: absolute;
   border: 0.052vw solid #000;
@@ -158,9 +194,9 @@ h2 {
   display: flex; 
 }
 
+
+/*animazione pulsante di reset gioco*/
 #reset-button:hover {
-  transform: scale(2.0, 2.0);
+  transform: scale(1.3, 1.3);
   transform-origin: center;
 }
-
-

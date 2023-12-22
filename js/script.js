@@ -559,14 +559,13 @@ const questions = [
 
 const finalAnswers = {
 	right: [
-		"Congratulazioni! Ho indovinato il personaggio che stavi pensando.",
-		"Esatto! È il personaggio che stavi pensando.",
+		"Evviva! Ho indovinato il personaggio che stavi pensando.",
 		"Yay! Ho indovinato il personaggio!"
 	],
 	wrong: [
 		"Mi dispiace, sembra che ci sia stato un errore nell'indovinare il personaggio.",
-		"Ops! Non ho indovinato correttamente il personaggio.",
-		"Peccato! Non è il personaggio che stavi pensando."
+		"Ops! Non ho indovinato il personaggio, riprova!",
+		"Peccato! Ho sbagliato, riprova!"
 	]
 }
 
