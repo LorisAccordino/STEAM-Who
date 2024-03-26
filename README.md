@@ -270,6 +270,6 @@ In sintesi, le funzioni `updateListenerSafe` e `setButtonListeners` sono state u
 
 - Assicurati di rispondere con attenzione e coerenza. Risposte casuali o inesatte potrebbero compromettere la correttezza dell'esito.
 - Se le risposte fornite non sono chiare o imprecise, il gioco potrebbe non essere in grado di indovinare correttamente il personaggio desiderato.
-- In caso di errore nelle risposte o di mancato indovinamento del personaggio, il gioco si ricomincerà, permettendo di giocare una nuova partita.
+- In caso di errore nelle risposte o di mancato indovinamento del personaggio, il gioco ricomincerà, permettendo di giocare una nuova partita.
 
 Divertiti a giocare e buona fortuna nel far indovinare al gioco il personaggio che hai scelto!
