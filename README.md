@@ -16,9 +16,6 @@ Infine, la quarta parte riguarda l'animazione del genio Akinator e è stata cura
 
 Questa suddivisione dei compiti ci ha consentito di lavorare in modo efficiente e produttivo, sfruttando le competenze specifiche di ciascun membro del team. Siamo fiduciosi che il risultato finale sarà un Akinator dedicato al mondo S.T.E.A.M. che appassionerà e intratterrà gli utenti.
 
-
-- css (accolla e carnevale)
-
 # Ricerca generale
 
 Per questo lavoro, ci siamo proposti di selezionare cinque personaggi per ogni categoria, affrontando un'approfondita ricerca per garantire una varietà e un interesse significativi. Durante il processo di ricerca, ci siamo concentrati su diverse informazioni chiave per arricchire l'esperienza dell'utente nel gioco.
