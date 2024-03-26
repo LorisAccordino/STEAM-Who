@@ -46,7 +46,7 @@
         "name":"Jane Goodall",
         "features":{
             "yearOfBirth":1934,
-            "country":"england",
+            "country":"uk",
             "sex":"f",
             "colorOfHair":"grey",
             "colorOfEyes":"brown",
@@ -57,7 +57,7 @@
                 "anthropologist"
             ],
             "specialities":[
-                "primate research"
+                "primate_research"
             ],
             "awards":5,
             "nobels":0,
@@ -78,7 +78,7 @@
                 "crystallographer"
             ],
             "specialities":[
-                "dna structure"
+                "dna_structure_discovery"
             ],
             "awards":0,
             "nobels":0,
@@ -95,7 +95,7 @@
             "colorOfEyes":"blue",
             "colorOfMustache":null,
             "professions":[
-                "science",
+                "science_communicator",
                 "history"
             ],
             "specialities":[
@@ -120,7 +120,7 @@
                 "entrepreneur"
             ],
             "specialities":[
-                "cellphone producer"
+                "apple_ceo"
             ],
             "awards":4,
             "nobels":0,
@@ -133,15 +133,16 @@
             "yearOfBirth":1964,
             "country":"usa",
             "sex":"m",
-            "colorOfHair":"bald",
+            "colorOfHair":"no",
             "colorOfEyes":"brown",
             "colorOfMustache":null,
             "professions":[
-                "technological",
-                "investor"
+                "entrepreneur",
+                "company_manager",
+                "company_owner"
             ],
             "specialities":[
-                "founder of amazon"
+                "amazon_owner"
             ],
             "awards":3,
             "nobels":0,
@@ -158,11 +159,12 @@
             "colorOfEyes":"blue",
             "colorOfMustache":null,
             "professions":[
-                "technological",
+                "company_owner",
+                "company_manager",
                 "entrepreneur"
             ],
             "specialities":[
-                "founder of microsoft"
+                "microsoft_founder"
             ],
             "awards":9,
             "nobels":0,
@@ -179,11 +181,12 @@
             "colorOfEyes":"blue",
             "colorOfMustache":null,
             "professions":[
-                "technological",
+                "company_owner",
+                "company_manager",
                 "entrepreneur"
             ],
             "specialities":[
-                "founder of facebook"
+                "facebook_ceo"
             ],
             "awards":6,
             "nobels":0,
@@ -203,7 +206,7 @@
                 "technological"
             ],
             "specialities":[
-                "microsoft employer"
+                "microsoft_ceo"
             ],
             "awards":4,
             "nobels":0,
@@ -220,12 +223,11 @@
             "colorOfEyes":null,
             "colorOfMustache":"black",
             "professions":[
-                "inventor",
                 "physicist",
                 "engineer"
             ],
             "specialities":[
-                "basic electrical system"
+                "electrical_system_basis"
             ],
             "awards":4,
             "nobels":0,
@@ -245,7 +247,7 @@
                 "inventor"
             ],
             "specialities":[
-                "telegraph"
+                "telegraph_invention"
             ],
             "awards":12,
             "nobels":0,
@@ -265,7 +267,7 @@
                 "entrepreneur"
             ],
             "specialities":[
-                "assembly line"
+                "assembly_line_invention"
             ],
             "awards":3,
             "nobels":0,
@@ -285,7 +287,7 @@
                 "engineer"
             ],
             "specialities":[
-                "great eastern"
+                "great_eastern_construction"
             ],
             "awards":0,
             "nobels":0,
@@ -306,8 +308,7 @@
                 "entrepreneur"
             ],
             "specialities":[
-                "tesla",
-                "space X"
+                "spacex_invention"
             ],
             "awards":5,
             "nobels":0,
@@ -328,8 +329,7 @@
                 "artist"
             ],
             "specialities":[
-                "ornitottero",
-                "self-propelled wagon"
+                "ornithopter_invention"
             ],
             "awards":1,
             "nobels":0,
@@ -349,7 +349,7 @@
                 "artist"
             ],
             "specialities":[
-                "la notte stellata"
+                "starry_night_painting"
             ],
             "awards":0,
             "nobels":0,
@@ -369,7 +369,7 @@
                 "artist"
             ],
             "specialities":[
-                "expression of freedom"
+                "liberty_expressionist"
             ],
             "awards":2,
             "nobels":0,
@@ -389,7 +389,7 @@
                 "artist"
             ],
             "specialities":[
-                "periodo blu e rosa"
+                "blue_and_pink_periods"
             ],
             "awards":4,
             "nobels":0,
@@ -409,8 +409,7 @@
                 "artist"
             ],
             "specialities":[
-                "surrealista",
-                "dadaista"
+                "surrealism_member"
             ],
             "awards":3,
             "nobels":0,
@@ -431,8 +430,7 @@
                 "matematich"
             ],
             "specialities":[
-                "gravity",
-                "reflector telescope"
+                "gravity_discovery"
             ],
             "awards":0,
             "nobels":0,
@@ -449,11 +447,10 @@
             "colorOfEyes":"blue",
             "colorOfMustache":null,
             "professions":[
-                "matematich"
+                "mathematician"
             ],
             "specialities":[
-                "eptadecagono",
-                "modular arithmetic"
+                "modular_arithmetic"
             ],
             "awards":2,
             "nobels":0,
@@ -463,7 +460,7 @@
     {
         "name":"Pitagora",
         "features":{
-            "yearOfBirth":575,
+            "yearOfBirth":-575,
             "country":"greece",
             "sex":"m",
             "colorOfHair":"white",
@@ -471,37 +468,35 @@
             "colorOfMustache":"white",
             "professions":[
                 "physic",
-                "matematich",
-                "scientist"
+                "mathematician"
             ],
             "specialities":[
-                "geometry"
+                "geometric_discoveries"
             ],
             "awards":0,
             "nobels":0,
-            "yearOfDeath":495
+            "yearOfDeath":-495
         }
     },
     {
         "name":"Archimede",
         "features":{
-            "yearOfBirth":287,
+            "yearOfBirth":-287,
             "country":"italy",
             "sex":"m",
             "colorOfHair":"white",
             "colorOfEyes":"brown",
             "colorOfMustache":"white",
             "professions":[
-                "physic",
-                "matematich"
+                "physicist",
+                "mathematician"
             ],
             "specialities":[
-                "circle",
-                "floating bodies"
+                "buoyancy_discovery"
             ],
             "awards":0,
             "nobels":0,
-            "yearOfDeath":212
+            "yearOfDeath":-212
         }
     },
     {
@@ -511,16 +506,14 @@
             "country":"uk",
             "sex":"m",
             "colorOfHair":"brown",
-            "colorOfEyes":"blu",
+            "colorOfEyes":"blue",
             "colorOfMustache":null,
             "professions":[
-                "physic",
-                "matematich",
-                "technological"
+                "physicist",
+                "mathematician"
             ],
             "specialities":[
-                "turing machine",
-                "teoria della computazione"
+                "computation_theory"
             ],
             "awards":0,
             "nobels":0,

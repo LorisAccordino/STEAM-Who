@@ -23,13 +23,7 @@ function _debug_printQuestions(data) {
 
 
 
-readJSON('js/questions.json')
-.then(data => {
-	_debug_printQuestions(data)
-})
-.catch(error => {
-	console.error('An error occurred:', error);
-});
+
 
 
 
@@ -37,39 +31,24 @@ readJSON('js/questions.json')
 
 
 // Inizializzazione delle variabili
+let questions = null;
 let characters = null;
 
-readJSON('js/characters.json').then(data => {
-    characters = data;
+readJSON('json/questions.json')
+.then(data => {
+	//_debug_printQuestions(data)
+	questions = data;
+})
+.catch(error => {
+	console.error('An error occurred:', error);
 });
 
-
-const questions = [
-	{
-		question: 'Il tuo personaggio è un fisico?',
-		answer: {
-			expression: "professions == physicist"
-		}
-	},
-	{
-		question: 'Il tuo personaggio è un chimico?',
-		answer: {
-			expression: "professions == chemist"
-		}
-	},
-	{
-		question: 'Il tuo personaggio è un maschio?',
-		answer: {
-			expression: "sex == m"
-		}
-	},
-	{
-		question: 'Il tuo personaggio è morto prima del 1950?',
-		answer: {
-			expression: "yearOfDeath < 1950"
-		}
-	}
-]
+readJSON('json/characters.json').then(data => {
+    characters = data;
+})
+.catch(error => {
+	console.error('An error occurred:', error);
+});
 
 const finalAnswers = {
 	right: [
@@ -90,6 +69,7 @@ var noButton = null;
 var resetButton = null;
 
 var remainingCharacters = null;
+var categoryIndex = 0;
 var remainingQuestions = null;
 var selectedQuestion = null;
 
@@ -109,7 +89,7 @@ function nextQuestion() {
 	}
 
 	// Verifica se il personaggio "potrebbe" essere stato indovinato
-	if (remainingQuestions.length === 0 || remainingCharacters.length === 1) {
+	if ( remainingCharacters.length === 1) {
 		askConfirmation(remainingCharacters[0]);
 		return;
 	}
@@ -122,31 +102,72 @@ function nextQuestion() {
 	questionText.innerHTML = selectedQuestion.question;
 
 	// Rimuovi la domanda utilizzata dalla lista delle domande
-	remainingQuestions = remainingQuestions.filter(item => item !== selectedQuestion);
+	//remainingQuestions = remainingQuestions.filter(item => item !== selectedQuestion);
+
+	// Passa alla categoria successiva di domande
+	remainingQuestions = questions.categories[++categoryIndex].questions;	
 }
 
 function processAnswer(expression, answer) {
 	// Filtra i personaggi, in base alla risposta
 	remainingCharacters = filterCharacters(expression, answer);
+
+	// Rimuovi le domande superflue
+	remainingQuestions = filterQuestions(remainingQuestions, remainingCharacters);
+
 	console.log('CHARACTERS: ', remainingCharacters);
+	console.log('QUESTIONS: ', remainingQuestions);
 	nextQuestion();
 }
 
 function filterCharacters(expression, answerValue) {
 	return remainingCharacters.filter(character => {
-		return evaluateExpression(expression, character.features, answerValue);
+		return evaluateExpression(expression, character, answerValue);
 	});
 }
 
-function evaluateExpression(expression, features, answerValue) {
-	const [feature, operator, val] = expression.split(' ');
-	const featureValue = features[feature];
+function filterQuestions(quest, characters) {
+	const filteredQuestions = quest.filter(question => {
+	  // Valuta l'espressione con ogni personaggio
+	  let isApplicable = characters.some(character => {
+		let answerValue = true;
+		return evaluateExpression(question.answer.expression, character, answerValue);
+	  });
+  
+	  return isApplicable;
+	});
+  
+	// Se tutte le domande sono state rimosse, passa alla categoria successiva
+	if (filteredQuestions.length === 0) {
+	  categoryIndex++;
+
+	  // Se non ci sono più categorie, restituisci un array vuoto
+	  if (quest == null) {
+		return [];
+	  }
+	  if (categoryIndex >= questions.categories.length) {
+		return [];
+	  }
+  
+	  // Recupera le domande della nuova categoria
+	  return filterQuestions(questions.categories[categoryIndex].questions, characters);
+	}
+  
+	return filteredQuestions;
+} 
+
+function evaluateExpression(expression, character, answerValue) {
+	let [feature, operator, val] = expression.split(' ');
+	const featureValue = character.features[feature];
 	var resultValue = undefined;
 
 	if (featureValue === undefined) {
 		console.log('SKIPPED QUESTIONS');
 		return true;
 	}
+
+	// Gestisci il parse dei null
+	val = val == "null" ? null : val;
 
 	// Funzione per verificare se un valore è presente in un array
 	const arrayContainsValue = (arr, value) => Array.isArray(arr) && arr.includes(value);
@@ -244,8 +265,9 @@ function updateListenerSafe(element, event, oldCallback, newCallback) {
 }
 
 function akinator() {
+	categoryIndex = 0;
 	remainingCharacters = characters;
-	remainingQuestions = questions;
+	remainingQuestions = questions.categories[categoryIndex].questions;
 	genieImage.src = "img/idle-genie.png"
 
 	// Modifica la visibilità dei pulsanti
