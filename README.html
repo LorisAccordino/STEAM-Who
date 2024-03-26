@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="steam-who">STEAM Who</h1>
+<p>Un quiz stile Akinator circa alcuni importanti personaggi S.T.E.A.M.</p>
+<h2 id="idea-e-analisi">Idea e analisi</h2>
+<p>Nel nostro progetto, ci siamo dedicati a ricreare il famoso gioco di Akinator, focalizzandoci su personaggi appartenenti alla categoria S.T.E.A.M. Per garantire un equo contributo da parte di tutti i membri del gruppo, abbiamo diviso il lavoro in quattro parti distinte.</p>
+<h2 id="suddivisione-del-lavoro">Suddivisione del lavoro</h2>
+<p>La prima parte riguarda il codice del gioco ed è stata sviluppata da Loris Accordino, che si è dedicato a creare la struttura logica e funzionale del nostro Akinator.</p>
+<p>La seconda parte è stata gestita da Francesco Accolla e Simone Carnevale, che hanno lavorato insieme per definire lo stile del gioco attraverso il CSS.</p>
+<p>La terza parte del nostro progetto è stata affidata a Jessica Noce e Alejo Costamagna, i quali si sono occupati della ricerca e dell'inclusione dei personaggi nella categoria S.T.E.A.M.</p>
+<p>Infine, la quarta parte riguarda l'animazione del genio Akinator e è stata curata da Federico Foglieni. L'animazione contribuirà a dare vita al nostro gioco, rendendolo più coinvolgente e divertente per gli utenti.</p>
+<p>Questa suddivisione dei compiti ci ha consentito di lavorare in modo efficiente e produttivo, sfruttando le competenze specifiche di ciascun membro del team. Siamo fiduciosi che il risultato finale sarà un Akinator dedicato al mondo S.T.E.A.M. che appassionerà e intratterrà gli utenti.</p>
+<h1 id="ricerca-generale">Ricerca generale</h1>
+<p>Per questo lavoro, ci siamo proposti di selezionare cinque personaggi per ogni categoria, affrontando un'approfondita ricerca per garantire una varietà e un interesse significativi. Durante il processo di ricerca, ci siamo concentrati su diverse informazioni chiave per arricchire l'esperienza dell'utente nel gioco.</p>
+<p>Abbiamo colto l'opportunità di fornire dettagli che spaziano dalla data di nascita alla data di morte, qualora applicabile, permettendo così agli utenti di avere una panoramica temporale completa sulla vita dei personaggi inclusi nel gioco.</p>
+<p>La loro professione è stata un aspetto fondamentale della nostra indagine, permettendoci di comprendere il contributo che ogni personaggio ha apportato nel campo S.T.E.A.M. Questo includeva sia le loro invenzioni specifiche che le loro scoperte, offrendo così un quadro più ampio delle loro realizzazioni.</p>
+<p>Oltre alle informazioni biografiche e professionali, abbiamo anche considerato le caratteristiche fisiche, quando disponibili, per rendere i personaggi più riconoscibili e per consentire agli utenti di identificarli con maggiore facilità durante il gioco.</p>
+<h1 id="aspetti-grafici">Aspetti grafici</h1>
+<p>Per la parte di animazione dedicata al genio, abbiamo adottato uno stile di pixel art ispirato al personaggio del genio del film Aladino. Dopo un'accurata selezione del personaggio da ritrarre, ci siamo impegnati nella creazione di quattro frame distinti, ciascuno dei quali cattura espressioni diverse del genio, in sintonia con le varie situazioni che potrebbero emergere durante il gioco.</p>
+<p>La scelta della pixel art è stata motivata da un desiderio di conferire un tocco di originalità e di evocare la nostalgia dei giochi classici, contribuendo a creare un'esperienza visiva accattivante per gli utenti. L'utilizzo di quattro frame distinti assicura una transizione fluida tra le espressioni, conferendo al genio una dinamicità che arricchisce l'interattività all'interno del nostro Akinator dedicato al mondo S.T.E.A.M.</p>
+<h1 id="funzionamento-dello-script">Funzionamento dello script</h1>
+<p>Questo script JavaScript implementa un semplice meccanismo per indovinare un personaggio famoso attraverso una serie di domande a risposta sì/no.
+Le domande sono progettate per un filtraggio progressivo, in modo da restringere gradualmente le opzioni fino a indovinare correttamente il personaggio in mente dell'utente.</p>
+<h2 id="pseudocodice-generale">Pseudocodice generale</h2>
+<p>Di seguito è fornito un pseudocodice che rappresenta (a grandi linee) il funzionamento logico dello script:</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// ... Inizializzazione delle variabili</span>
+characters = [...];
+questions = [...];
+finalAnswers = {...};
+
+<span class="hljs-comment">// ... altre variabili</span>
+
+<span class="hljs-comment">// ... callback (listener) per i pulsanti</span>
+
+<span class="hljs-comment">// Funzione per passare alla prossima domanda</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nextQuestion</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// ...</span>
+
+}
+
+<span class="hljs-comment">// Funzione per processare la risposta dell'utente</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processAnswer</span>(<span class="hljs-params">expression, answer</span>) </span>{
+	<span class="hljs-comment">// ... filtra i personaggi, in base alla risposta</span>
+	
+	nextQuestion();
+}
+
+<span class="hljs-comment">// Funzione per filtrare i personaggi in base alla risposta</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterCharacters</span>(<span class="hljs-params">expression, answerValue</span>) </span>{
+	<span class="hljs-comment">// ... filtra i personaggi, con evaluateExpression(expression, features)</span>
+
+}
+
+<span class="hljs-comment">// Funzione per valutare un'espressione</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">evaluateExpression</span>(<span class="hljs-params">expression, features</span>) </span>{
+	<span class="hljs-keyword">const</span> [feature, operator, val] = expression.split(<span class="hljs-string">' '</span>);
+	<span class="hljs-keyword">const</span> featureValue = features[feature];
+
+	<span class="hljs-comment">// ...</span>
+
+	<span class="hljs-keyword">switch</span> (operator) {
+		<span class="hljs-keyword">case</span> <span class="hljs-string">'&lt;'</span>:
+			<span class="hljs-keyword">return</span> <span class="hljs-built_in">parseFloat</span>(featureValue) &lt; <span class="hljs-built_in">parseFloat</span>(val);
+		<span class="hljs-keyword">case</span> <span class="hljs-string">'&gt;='</span>:
+			<span class="hljs-keyword">return</span> <span class="hljs-built_in">parseFloat</span>(featureValue) &gt;= <span class="hljs-built_in">parseFloat</span>(val);
+        <span class="hljs-comment">// ...</span>
+	}
+
+    <span class="hljs-comment">// ...</span>
+
+}
+
+<span class="hljs-comment">// Funzione per verificare il personaggio indovinato</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">askConfirmation</span>(<span class="hljs-params">character</span>) </span>{
+	<span class="hljs-comment">// ... chiedi conferma per l'esito</span>
+
+}
+
+<span class="hljs-comment">// Esito dell'ipotesi</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resultOfTheGuess</span>(<span class="hljs-params">guessed</span>) </span>{
+	<span class="hljs-comment">// ...</span>
+
+	<span class="hljs-keyword">if</span> (guessed) {
+		<span class="hljs-comment">// ... se ha indovinato il personaggio</span>
+	}
+	<span class="hljs-keyword">else</span> {
+		<span class="hljs-comment">// ... se ha sbagliato il personaggio</span>
+	}
+
+	<span class="hljs-comment">// ...</span>
+
+}
+
+<span class="hljs-comment">// ... funzioni dei listener e dei pulsanti</span>
+
+<span class="hljs-comment">// ...</span>
+
+<span class="hljs-comment">// ...</span>
+
+
+
+<span class="hljs-comment">// Funzione di avvio del gioco</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">akinator</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// ...</span>
+
+    nextQuestion();
+}
+
+<span class="hljs-comment">// Avvio del gioco al caricamento della pagina</span>
+<span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// ...</span>
+
+    akinator();
+}
+</div></code></pre>
+<h2 id="strutture-dati">Strutture Dati</h2>
+<p>Nella progettazione del gioco, sono state scelte specifiche strutture dati, come gli array per personaggi e domande, per garantire un'organizzazione chiara e ottimale delle informazioni:</p>
+<ol>
+<li>
+<p>Nell'array <code>characters</code>, ogni oggetto rappresenta un personaggio famoso con attributi come nome, caratteristiche fisiche, professioni, premi, ecc. Ogni personaggio ha un insieme di attributi che include il nome, anno di nascita, paese di provenienza, genere, colore dei capelli, colore degli occhi, e altre caratteristiche specifiche.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> characters = [
+    {
+        <span class="hljs-attr">name</span>: <span class="hljs-string">'Albert Einstein'</span>,
+        <span class="hljs-attr">features</span>: {
+            <span class="hljs-attr">yearOfBirth</span>: <span class="hljs-number">1879</span>,
+            <span class="hljs-attr">country</span>: <span class="hljs-string">"Germania"</span>,
+            <span class="hljs-comment">// ... altre caratteristiche</span>
+            <span class="hljs-attr">nobels</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">yearOfDeath</span>: <span class="hljs-number">1955</span>
+        }
+    },
+    <span class="hljs-comment">// ... altri personaggi</span>
+];
+</div></code></pre>
+</li>
+<li>
+<p>L'array <code>questions</code> contiene una serie di domande a risposta multipla. Ogni domanda ha un testo e una risposta associata rappresentata da un'espressione che sarà valutata durante il gioco. Le domande sono progettate per determinare le caratteristiche del personaggio a cui l'utente sta pensando.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> questions = [
+    {
+        <span class="hljs-attr">question</span>: <span class="hljs-string">'Il tuo personaggio è un fisico?'</span>,
+        <span class="hljs-attr">answer</span>: {
+            <span class="hljs-attr">expression</span>: <span class="hljs-string">"professions == physicist"</span>
+        }
+    },
+    <span class="hljs-comment">// ... altre domande</span>
+];
+</div></code></pre>
+</li>
+<li>
+<p>L'oggetto <code>finalAnswers</code> contiene possibili risposte che saranno mostrate all'utente a seconda che il personaggio sia stato indovinato correttamente o meno. Queste risposte vengono visualizzate alla fine del gioco in base all'esito.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">const</span> finalAnswers = {
+    <span class="hljs-attr">right</span>: [
+        <span class="hljs-string">"Congratulazioni! Ho indovinato il personaggio che stavi pensando."</span>,
+        <span class="hljs-comment">// ... altre risposte, avendo indovinato il personaggio</span>
+    ],
+    <span class="hljs-attr">wrong</span>: [
+        <span class="hljs-string">"Mi dispiace, sembra che ci sia stato un errore nell'indovinare il personaggio."</span>,
+        <span class="hljs-comment">// ... altre risposte, avendo sbagliato il personaggio</span>
+    ]
+};
+</div></code></pre>
+</li>
+</ol>
+<p>Queste strutture dati sono utilizzate per memorizzare informazioni sui personaggi, creare domande da porre all'utente e gestire le risposte finali nel gioco, dopo aver provato a indovinare il personaggio famoso a cui l'utente sta pensando.</p>
+<h2 id="filtraggio-dei-personaggi-e-valutazione-delle-espressioni">Filtraggio dei Personaggi e Valutazione delle Espressioni</h2>
+<p>La funzione <code>processAnswer</code> gestisce la risposta dell'utente filtrando i personaggi rimanenti in base alla risposta data. Ecco una spiegazione delle funzioni coinvolte:</p>
+<h3 id="funzioni-principali">Funzioni Principali:</h3>
+<ol>
+<li>
+<p><code>processAnswer(expression, answer)</code>: Questa funzione è chiamata quando l'utente fornisce una risposta. Prende in input l'espressione da valutare e la risposta data dall'utente. Filtra i personaggi rimanenti in base alla risposta e passa alla prossima domanda.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">processAnswer</span>(<span class="hljs-params">expression, answer</span>) </span>{
+    remainingCharacters = filterCharacters(expression, answer);
+    nextQuestion();
+}
+</div></code></pre>
+</li>
+<li>
+<p><code>filterCharacters(expression, answerValue)</code>: Questa funzione si occupa di filtrare i personaggi in base alla risposta fornita. Utilizza la funzione <code>evaluateExpression</code> per valutare l'espressione e confrontare i valori delle caratteristiche dei personaggi con la risposta data.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">filterCharacters</span>(<span class="hljs-params">expression, answerValue</span>) </span>{
+    <span class="hljs-keyword">return</span> remainingCharacters.filter(<span class="hljs-function"><span class="hljs-params">character</span> =&gt;</span> {
+        <span class="hljs-keyword">return</span> evaluateExpression(expression, character.features) == answerValue;
+    });
+}
+</div></code></pre>
+</li>
+<li>
+<p><code>evaluateExpression(expression, features)</code>: Questa funzione valuta un'espressione che contiene un'operazione condizionale. Prende in input un'espressione, estrae l'operatore e i valori necessari dall'espressione e valuta se l'espressione è vera o falsa in base alle caratteristiche del personaggio. Utilizza un set di operatori come <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>!=</code> e <code>==</code> per confrontare i valori delle caratteristiche del personaggio con il valore fornito.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">evaluateExpression</span>(<span class="hljs-params">expression, features</span>) </span>{
+    <span class="hljs-comment">// ... (codice della funzione)</span>
+}
+</div></code></pre>
+</li>
+</ol>
+<p>In breve, <code>processAnswer</code> richiama <code>filterCharacters</code> per filtrare i personaggi in base alla risposta dell'utente utilizzando la funzione <code>evaluateExpression</code>, che confronta le caratteristiche del personaggio con l'espressione data dall'utente. Infine, la funzione <code>nextQuestion</code> viene chiamata per procedere con la prossima domanda nel gioco.</p>
+<h2 id="gestione-degli-eventi-e-dei-listener">Gestione degli Eventi e dei Listener</h2>
+<p>Nel gioco, la gestione degli eventi e dei listener è fondamentale per catturare le azioni dell'utente attraverso l'interfaccia dei pulsanti. Ecco come è stata gestita questa logica nel codice:</p>
+<h3 id="funzioni-coinvolte">Funzioni Coinvolte:</h3>
+<ol>
+<li>
+<p><code>updateListenerSafe(element, event, oldCallback, newCallback)</code>: Questa funzione è stata progettata per aggiornare i listener degli eventi sugli elementi HTML. Essa rimuove il vecchio callback (se presente e di tipo funzione) e aggiunge il nuovo callback all'evento specificato sull'elemento fornito.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateListenerSafe</span>(<span class="hljs-params">element, event, oldCallback, newCallback</span>) </span>{
+    <span class="hljs-keyword">if</span> (element &amp;&amp; oldCallback &amp;&amp; <span class="hljs-keyword">typeof</span> oldCallback === <span class="hljs-string">'function'</span>) {
+        element.removeEventListener(event, oldCallback);
+    }
+    
+    <span class="hljs-keyword">if</span> (element &amp;&amp; newCallback &amp;&amp; <span class="hljs-keyword">typeof</span> newCallback === <span class="hljs-string">'function'</span>) {
+        element.addEventListener(event, newCallback);
+    }
+
+    <span class="hljs-keyword">return</span> newCallback;
+}
+</div></code></pre>
+</li>
+<li>
+<p><code>setButtonListeners(yesBtnListener, noBtnListener, resetBtnListener)</code>: Questa funzione imposta i listener dei pulsanti &quot;Sì&quot;, &quot;No&quot; e &quot;Reset&quot; richiamando <code>updateListenerSafe</code>. Assegna i nuovi listener ai rispettivi pulsanti in base alle funzioni passate come argomenti.</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setButtonListeners</span>(<span class="hljs-params">yesBtnListener, noBtnListener, resetBtnListener</span>) </span>{
+    handleYesAnswer = updateListenerSafe(yesButton, <span class="hljs-string">'click'</span>, handleYesAnswer, yesBtnListener);
+    handleNoAnswer = updateListenerSafe(noButton, <span class="hljs-string">'click'</span>, handleNoAnswer, noBtnListener);
+    handleResetAnswer = updateListenerSafe(resetButton, <span class="hljs-string">'click'</span>, handleResetAnswer, resetBtnListener);
+}
+</div></code></pre>
+</li>
+<li>
+<p>Assegnamento dei listener ai pulsanti: Nel gioco, l'assegnamento dei listener ai pulsanti avviene utilizzando <code>setButtonListeners</code>. Ad esempio:</p>
+<pre class="hljs"><code><div>setButtonListeners(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ resultOfTheGuess(<span class="hljs-literal">true</span>) }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ resultOfTheGuess(<span class="hljs-literal">false</span>) }, <span class="hljs-literal">null</span>);
+</div></code></pre>
+<p>Questo snippet assegna i listener ai pulsanti &quot;Sì&quot; e &quot;No&quot; in modo che quando vengono cliccati, chiamino la funzione <code>resultOfTheGuess(true)</code> e <code>resultOfTheGuess(false)</code> rispettivamente.</p>
+</li>
+</ol>
+<p>In sintesi, le funzioni <code>updateListenerSafe</code> e <code>setButtonListeners</code> sono state utilizzate per gestire la rimozione e l'aggiunta sicura dei listener sugli elementi HTML, consentendo il controllo delle azioni dell'utente all'interno del gioco.</p>
+<h2 id="istruzioni-per-lutilizzo">Istruzioni per l'Utilizzo</h2>
+<ol>
+<li>Avvia il gioco.</li>
+<li>Rispondi alle domande con sì o no.</li>
+<li>Continua a rispondere fino a quando il personaggio non viene indovinato.</li>
+</ol>
+<h3 id="note-importanti">Note Importanti:</h3>
+<ul>
+<li>Assicurati di rispondere con attenzione e coerenza. Risposte casuali o inesatte potrebbero compromettere la correttezza dell'esito.</li>
+<li>Se le risposte fornite non sono chiare o imprecise, il gioco potrebbe non essere in grado di indovinare correttamente il personaggio desiderato.</li>
+<li>In caso di errore nelle risposte o di mancato indovinamento del personaggio, il gioco si ricomincerà, permettendo di giocare una nuova partita.</li>
+</ul>
+<p>Divertiti a giocare e buona fortuna nel far indovinare al gioco il personaggio che hai scelto!</p>
+
+</body>
+</html>
