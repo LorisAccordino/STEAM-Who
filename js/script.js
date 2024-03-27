@@ -292,4 +292,7 @@ window.onload = function() {
 	setButtonListeners(handleYesAnswer, handleNoAnswer, handleResetAnswer);
 
 	akinator();
+
+
+	//window.open('docs/Personaggi.pdf', '_blank');
 }

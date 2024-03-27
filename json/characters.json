@@ -27,7 +27,7 @@
             "sex":"f",
             "colorOfHair":"blonde",
             "colorOfEyes":"brown",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "physicist",
                 "chemist"
@@ -48,9 +48,9 @@
             "yearOfBirth":1934,
             "country":"uk",
             "sex":"f",
-            "colorOfHair":"grey",
-            "colorOfEyes":"brown",
-            "colorOfMustache":null,
+            "colorOfHair":"white",
+            "colorOfEyes":"green",
+            "colorOfMustache":"no",
             "professions":[
                 "primatologist",
                 "ethologist",
@@ -72,7 +72,7 @@
             "sex":"f",
             "colorOfHair":"brown",
             "colorOfEyes":null,
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "chemist",
                 "crystallographer"
@@ -91,12 +91,11 @@
             "yearOfBirth":1928,
             "country":"italy",
             "sex":"m",
-            "colorOfHair":"grey",
+            "colorOfHair":"white",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
-                "science_communicator",
-                "history"
+                "science_communicator"
             ],
             "specialities":[
                 null
@@ -114,9 +113,8 @@
             "sex":"m",
             "colorOfHair":"grey",
             "colorOfEyes":"brown",
-            "colorOfMustache":null,
+            "colorOfMustache":"white",
             "professions":[
-                "technological",
                 "entrepreneur"
             ],
             "specialities":[
@@ -135,7 +133,7 @@
             "sex":"m",
             "colorOfHair":"no",
             "colorOfEyes":"brown",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "entrepreneur",
                 "company_manager",
@@ -157,11 +155,12 @@
             "sex":"m",
             "colorOfHair":"white",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "company_owner",
                 "company_manager",
-                "entrepreneur"
+                "entrepreneur",
+                "informatic"
             ],
             "specialities":[
                 "microsoft_founder"
@@ -179,11 +178,12 @@
             "sex":"m",
             "colorOfHair":"blonde",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "company_owner",
                 "company_manager",
-                "entrepreneur"
+                "entrepreneur",
+                "informatic"
             ],
             "specialities":[
                 "facebook_ceo"
@@ -199,11 +199,12 @@
             "yearOfBirth":1967,
             "country":"india",
             "sex":"m",
-            "colorOfHair":null,
+            "colorOfHair":"no",
             "colorOfEyes":"black",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
-                "technological"
+                "company_manager",
+                "entrepreneur"
             ],
             "specialities":[
                 "microsoft_ceo"
@@ -224,7 +225,8 @@
             "colorOfMustache":"black",
             "professions":[
                 "physicist",
-                "engineer"
+                "engineer",
+                "inventor"
             ],
             "specialities":[
                 "electrical_system_basis"
@@ -242,9 +244,10 @@
             "sex":"m",
             "colorOfHair":"white",
             "colorOfEyes":null,
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
-                "inventor"
+                "inventor",
+                "entrepreneur"
             ],
             "specialities":[
                 "telegraph_invention"
@@ -262,7 +265,7 @@
             "sex":"m",
             "colorOfHair":"white",
             "colorOfEyes":null,
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "entrepreneur"
             ],
@@ -302,7 +305,7 @@
             "sex":"m",
             "colorOfHair":"brown",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "inventor",
                 "entrepreneur"
@@ -321,9 +324,9 @@
             "yearOfBirth":1452,
             "country":"italy",
             "sex":"m",
-            "colorOfHair":"white",
+            "colorOfHair":"no",
             "colorOfEyes":"black",
-            "colorOfMustache":"white",
+            "colorOfMustache":"grey",
             "professions":[
                 "inventor",
                 "artist"
@@ -363,8 +366,8 @@
             "country":"mexico",
             "sex":"f",
             "colorOfHair":"black",
-            "colorOfEyes":null,
-            "colorOfMustache":null,
+            "colorOfEyes":"black",
+            "colorOfMustache":"no",
             "professions":[
                 "artist"
             ],
@@ -382,9 +385,9 @@
             "yearOfBirth":1881,
             "country":"spain",
             "sex":"m",
-            "colorOfHair":null,
+            "colorOfHair":"no",
             "colorOfEyes":"brown",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "artist"
             ],
@@ -424,10 +427,10 @@
             "sex":"m",
             "colorOfHair":"white",
             "colorOfEyes":"green",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
-                "physic",
-                "matematich"
+                "physicist",
+                "mathematician"
             ],
             "specialities":[
                 "gravity_discovery"
@@ -445,7 +448,7 @@
             "sex":"m",
             "colorOfHair":"blonde",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "mathematician"
             ],
@@ -467,7 +470,7 @@
             "colorOfEyes":null,
             "colorOfMustache":"white",
             "professions":[
-                "physic",
+                "physicist",
                 "mathematician"
             ],
             "specialities":[
@@ -485,7 +488,7 @@
             "country":"italy",
             "sex":"m",
             "colorOfHair":"white",
-            "colorOfEyes":"brown",
+            "colorOfEyes":null,
             "colorOfMustache":"white",
             "professions":[
                 "physicist",
@@ -507,10 +510,11 @@
             "sex":"m",
             "colorOfHair":"brown",
             "colorOfEyes":"blue",
-            "colorOfMustache":null,
+            "colorOfMustache":"no",
             "professions":[
                 "physicist",
-                "mathematician"
+                "mathematician",
+                "informatic"
             ],
             "specialities":[
                 "computation_theory"

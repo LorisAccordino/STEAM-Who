@@ -8,7 +8,8 @@
         { "question": "Il tuo personaggio è un chimico?", "answer": { "expression": "professions == chemist" } },
         { "question": "Il tuo personaggio è un divulgatore scientifico?", "answer": { "expression": "professions == science_communicator" } },
         { "question": "Il tuo personaggio è un matematico?", "answer": { "expression": "professions == mathematician" } },
-        { "question": "Il tuo personaggio è un inprenditore?", "answer": { "expression": "professions == entrepreneur" } },
+        { "question": "Il tuo personaggio è un informatico?", "answer": { "expression": "professions == informatic" } },
+        { "question": "Il tuo personaggio è un imprenditore?", "answer": { "expression": "professions == entrepreneur" } },
         { "question": "Il tuo personaggio è un proprietatio di una azienda?", "answer": { "expression": "professions == company_owner" } },
         { "question": "Il tuo personaggio è un dirigente di una azienda?", "answer": { "expression": "professions == company_manager" } },
         { "question": "Il tuo personaggio è un ingegnere?", "answer": { "expression": "professions == engineer" } },
@@ -76,7 +77,7 @@
       "name": "Barba e baffi",
       "priority": 7,
       "questions": [
-        { "question": "Il tuo personaggio non ha barba/baffi?", "answer": { "expression": "colorOfMustache == no" } },
+        { "question": "Il tuo personaggio ha barba/baffi?", "answer": { "expression": "colorOfMustache != no" } },
         { "question": "Il tuo personaggio ha barba/baffi grigi?", "answer": { "expression": "colorOfMustache == grey" } },
         { "question": "Il tuo personaggio ha barba/baffi bianchi?", "answer": { "expression": "colorOfMustache == white" } },
         { "question": "Il tuo personaggio ha barba/baffi neri?", "answer": { "expression": "colorOfMustache == black" } },
@@ -106,6 +107,8 @@
       "questions": [
         { "question": "Il tuo personaggio è riconosciuto per varie teorie sulla relatività?", "answer": { "expression": "specialities == relativity" } },
         { "question": "Il tuo personaggio è riconosciuto per i suoi studi sulle radiazioni?", "answer": { "expression": "specialities == radio" } },
+        { "question": "Il tuo personaggio è riconosciuto per aver scoperto il polonio?", "answer": { "expression": "specialities == polonium" } },
+        { "question": "Il tuo personaggio è riconosciuto per i suoi studi sui raggi-x?", "answer": { "expression": "specialities == x-ray" } },
         { "question": "Il tuo personaggio è riconosciuta per i suoi studi sui primati?", "answer": { "expression": "specialities == primate_research" } },
         { "question": "Il tuo personaggio è riconosciuto per la sua scoperta riguardante la struttura del DNA?", "answer": { "expression": "specialities == dna_structure_discovery" } },
         { "question": "Il tuo personaggio è un amministratore delegato di Apple?", "answer": { "expression": "specialities == apple_ceo" } },

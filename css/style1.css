@@ -38,7 +38,7 @@ h2 {
 #parent-container {
   z-index: 1;
   background-color: rgba(0, 70, 201, 0.39);
-  height: 52vw;
+  height: 42vw;
   margin: 0.52vw;
   border: 0.05vw solid #000;
   padding: 0.1vw;
@@ -95,7 +95,7 @@ h2 {
   top: 7vw;
   position: absolute;
   width: 30vw;
-  height: 40.5vw;
+  height: 30.5vw;
   margin: 0.52vw;
   padding: 0.1vw;
 }
@@ -118,7 +118,7 @@ h2 {
   position: relative;
   margin-left: 0.52vw;
   margin-right: 0.52vw;
-  bottom: -43.5vw;
+  bottom: -33.5vw;
   border: 0.16vw solid #000;
   font-family: Arial, sans-serif;
   font-weight: bold;
