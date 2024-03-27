@@ -10,7 +10,7 @@ La prima parte riguarda il codice del gioco ed è stata sviluppata da Loris Acco
 
 La seconda parte è stata gestita da Francesco Accolla e Simone Carnevale, che hanno lavorato insieme per definire lo stile del gioco attraverso il CSS.
 
-La terza parte del nostro progetto è stata affidata a Jessica Noce e Alejo Costamagna, i quali si sono occupati della ricerca e dell'inclusione dei personaggi nella categoria S.T.E.A.M.
+La terza parte del nostro progetto è stata affidata a Jessica Noce, la quale si è occupata della ricerca e dell'inclusione dei personaggi nella categoria S.T.E.A.M.
 
 Infine, la quarta parte riguarda l'animazione del genio Akinator e è stata curata da Federico Foglieni. L'animazione contribuirà a dare vita al nostro gioco, rendendolo più coinvolgente e divertente per gli utenti.
 
