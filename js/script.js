@@ -1,14 +1,3 @@
-// Function to read JSON files
-function readJSON(path) {
-    return fetch(path)
-        .then(response => response.json())
-        .catch(error => {
-            console.error(`Error during the fetch of JSON at ${path}:`, error);
-            throw error;
-        });
-}
-
-
 function _debug_printQuestions(data) {
     data.categories.sort((a, b) => a.priority - b.priority);
 
@@ -21,34 +10,6 @@ function _debug_printQuestions(data) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-// Inizializzazione delle variabili
-let questions = null;
-let characters = null;
-
-readJSON('json/questions.json')
-.then(data => {
-	//_debug_printQuestions(data)
-	questions = data;
-})
-.catch(error => {
-	console.error('An error occurred:', error);
-});
-
-readJSON('json/characters.json').then(data => {
-    characters = data;
-})
-.catch(error => {
-	console.error('An error occurred:', error);
-});
 
 const finalAnswers = {
 	right: [

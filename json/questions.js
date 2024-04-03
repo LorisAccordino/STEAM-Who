@@ -1,4 +1,4 @@
-{
+var questions = {
   "categories": [
     {
       "name": "Lavoro",

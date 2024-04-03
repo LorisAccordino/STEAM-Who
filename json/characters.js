@@ -1,4 +1,4 @@
-[
+var characters = [
     {
         "name":"Albert Einstein",
         "features":{
